@@ -36,7 +36,7 @@ XGBoost是一种改进的决策树增强算法，具有训练速度快、精确�
 总的命令行执行语句为：
 
 ```shell
-mkdir /home/[用户名]/scripts
+mkdir /home/user124/scripts
 cd scripts
 find /home/ubuntu/tenset/scripts -type f -exec ln -fs {} /home/user124/scripts/ \;
 find /home/ubuntu/tenset/scripts -type d -exec ln -fs {} /home/user124/scripts/ \;
@@ -65,7 +65,7 @@ ln -s /home/ubuntu/tenset/scripts/dataset /home/user124/scripts
 
  得到的实验输出为训练后的相应数据，为训练得到的模型在测试集上的测试效果。
 
-```(空)
+```
 =========== Valid ============
 RMSE: 0.0912313940187328
  PREDS: [0.56446628 0.20632023 0.18618622 0.19983302 0.28089275 0.29460123
@@ -285,9 +285,9 @@ def train(self, dataset, max_episodes=1000):
 
  在实验过程中进行了epoch=100轮参数搜索，最后搜索的参数为：
 
-```(空)
+```
 max_depth: 10
-min_child_weight': 1
+min_child_weight: 1
 gamma: 0.055447838467443264
 eta: 0.1645789471134122
 ```
